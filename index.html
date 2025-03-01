@@ -4,9 +4,16 @@
          <title>alanna's notebook</title>
          <link rel="shortcut icon" href="favicon.png">
          <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         
          
             <style>
 
+            @media (max-width: 600px) {
+                body {
+                background-color: red;
+                }
+            }
 
                 #pattern {
                     position: fixed;
@@ -14,10 +21,10 @@
                     background-color: #ebede9;
                     text-shadow: 1px 3px 1px rgb(154, 141, 141);
                     border: 2px solid black;
-                    width: 300px;
-                    left: 180px;
-                    top: 330px;
-                    font-size: 48px;
+                    width: 22vw;
+                    left: 14vw;
+                    top: 40vh;
+                    font-size: 4vw;
                     font-family:'Pixelify Sans';
                     text-align: center;
                 }
@@ -25,106 +32,113 @@
                 #elegy {
                     position: absolute;
                     color: rgb(0, 0, 0); 
-                    width: 600px;
-                    left: 728px;
-                    top: 190px;
-                    font-size: 42px;
+                    width: 34vw;
+                    right: 10vw;
+                    top: 35vh;
+                    font-size: 2vw;
                     font-family:'Pixelify Sans';
                     text-align: left;
+                    z-index: 20;
                 }
                 #wood{
                     position: fixed;
                     transform: rotate(90deg);
-                    top: 0px;
-                    left: 0px;
-                    width: 1800px;
+                    top: 0vh;
+                    left: 0vw;
+                    width: 200vw;
                     z-index: -10;
                     
                 }
 
                 #paper{
                     position: absolute;
-                    top: 24px;
-                    left: 620px;
-                    width: 800px;
+                    top: 20vh;
+                    right: 10vw;
+                    width: 40vw;
+                    z-index: 10;
                     
                 }
 
                 #notebook{
                     position: fixed;
-                    width: 400px;
-                    height: 600px;
-                    top: 80px;
-                    left: 128px;
+                    width: 30vw;
+                    height: 80vh;
+                    top: 10vh;
+                    left: 10vw;
                     border: 2px solid black;
                     
                 }
 
-                #pixelMe{
+                #pixelMe{ 
                     position: fixed;
                     transform: rotate(45deg);
-                    width: 100px;
-                    top: 528px;
-                    left: 364px;
+                    width: 8vw;
+                    top: 70vh;
+                    left: 30vw;
                     border: 1px solid black;
+                    cursor: help;
                     
                 }
 
                 #tues{
                     position: fixed;
                     transform: rotate(335deg);
-                    width: 120px;
-                    top: 212px;
-                    left: 184px;
-                    z-index: 10;
+                    width: 8vw;
+                    top: 26vh;
+                    left: 14vw;
+                    z-index: 5;
                     
                 }
 
                 #sadFace{
                     position: fixed;
                     transform: rotate(20deg);
-                    width: 60px;
-                    top: 140px;
-                    left: 360px;
-                    z-index: 10;
+                    width: 6vw;
+                    top: 20vh;
+                    left: 28vw;
+                    z-index: 5;
+                    cursor: crosshair;
                     
                 }
                 #sadFace:hover{
                     position: fixed;
                     transform: rotate(200deg);
-                    width: 60px;
-                    top: 140px;
-                    left: 360px;
-                    z-index: 10;
+                    width: 6vw;
+                    top: 20vh;
+                    left: 28vw;
+                    z-index: 5;
+                    cursor: crosshair;
                     
                 }
 
                 #happyFace{
                     position: fixed;
                     transform: rotate(345deg);
-                    width: 120px;
-                    top: 420px;
-                    left: 160px;
-                    z-index: 10;
+                    width: 10vw;
+                    top: 64vh;
+                    left: 16vw;
+                    z-index: 5;
+                    cursor: crosshair;
                     
                 }
                 #happyFace:hover{
                     position: fixed;
                     transform: rotate(165deg);
-                    width: 120px;
-                    top: 420px;
-                    left: 160px;
-                    z-index: 10;
+                    width: 10vw;
+                    top: 64vh;
+                    left: 16vw;
+                    z-index: 5;
+                    cursor: crosshair;
                     
                 }
 
                 #couldHaveBeen{
                     position: absolute;
-                    width: 600px;
-                    height: 238px;
-                    top: 1240px;
-                    left: 730px;
-                    z-index: 0;
+                    width: 42vw;
+                    height: 40vh;
+                    top: 140vh;
+                    right: 9vw;
+                    z-index: 10;
                     overflow: no;
                     border: 1px solid black;
                     
@@ -132,10 +146,10 @@
 
                 #grid{
                     position: absolute;
-                    width: 600px;
-                    height: 160px;
-                    top: 1318px;
-                    left: 730px;
+                    width: 42vw;
+                    height: 26vh;
+                    top: 154vh;
+                    right: 9vw;
                     z-index: 10;
                     border: 1px solid black;
                     
@@ -145,15 +159,15 @@
                 }
                 .border {
                     position: absolute;
-                    height: 42px;
-                    width: 600px;
-                    top: 1240px;
-                    left: 730px;
+                    height: 8vh;
+                    width: 42vw;
+                    top: 140vh;
+                    right: 9vw;
                     background-color: #7883fa;
                     z-index: 10; 
                     border: 1px solid black;
                     font-family: 'Pixelify Sans';
-                    font-size: 34px;
+                    font-size: 3vw;
                     text-align: center;
                     }
                
@@ -180,22 +194,67 @@
                         text-decoration: none;
 
                     }
+
+                    #LJ:link{
+                        color: green;
+                        text-decoration: none;
+
+                    }
+                    #LJ:visited{
+                        color: blue;
+                        text-decoration: none;
+
+                    }
+                    #LJ:hover{
+                        color: red;
+                        text-decoration: none;
+                        font-style: italic;
+
+                    }
+
+                    #LJ:active{
+                        color: black;
+                        text-decoration: none;
+
+                    }
+
+                    #Tumblr:link{
+                        color: green;
+                        text-decoration: none;
+
+                    }
+                    #Tumblr:visited{
+                        color: blue;
+                        text-decoration: none;
+
+                    }
+                    #Tumblr:hover{
+                        color: red;
+                        text-decoration: none;
+                        font-style: italic;
+
+                    }
+
+                    #Tumblr:active{
+                        color: black;
+                        text-decoration: none;
+
+                    }
               
             </style>
         </head>
         <body>
-            
-
+          
             <iframe id = "couldHaveBeen" scrolling="no" frameborder="0" src="https://editor.p5js.org/alannabean/full/_YCHtnJJy"></iframe>
-            <img id = "notebook" src = "notebook.gif">
-            <img id = "paper" src = "notebookPaper.png">
-            <img id = "pixelMe" src = "pixelMe.png">
-            <a href="https://www.instagram.com/stories/highlights/17849833928317743/?hl=en"><img id = "tues" src = "tues.png"></a>
-            <img id = "wood" src = "wood1.jpg">
-            <!-- above image via opengameart.org CC0 -->
-            <img id = "sadFace" src = "sadFace.png">
-            <img id = "happyFace" src = "happyFace.png">
-            <img id = "grid" src = "grid.png">
+            <img alt = "A composition notebook with a constantly changing pattern." id = "notebook" src = "notebook.gif">
+            <img alt = "Pixelated notebook paper, drawn by hand." id = "paper" src = "notebookPaper.png">
+            <img alt = "An image of me so pixelated you probably can't tell what it's supposed to be." id = "pixelMe" src = "pixelMe.png">
+            <a href="secrets.html"><img alt = "An adorable and imperious looking small fluffy cat." id = "tues" src = "tues.png"></a>
+            <img alt = "A wooden backdrop, like a school desk." id = "wood" src = "wood1.jpg">
+            <!-- above image via opengameart.org CC0 // the rest by me-->
+            <img alt = "A pixelated face representing sadness" id ="sadFace" src = "sadFace.png">
+            <img alt = "A pixelated face representing joy" id = "happyFace" src = "happyFace.png">
+            <img alt = "A grid meant to resemble the constricting properties of a calendar" id = "grid" src = "grid.png">
 
 
 
@@ -211,14 +270,16 @@
                 It doesn't anymore, although I spend more time there —— here —— than ever.
                 <br>
                 <br>
-                Now it’s as a ticketed visitor, furtive and overwhelmed, the language I used to speak fluently withering to nothing on my tongue.
+                Now it’s as a ticketed visitor, furtive and overwhelmed, the language I <a id = "LJ" href="https://alannabean.livejournal.com/">used to speak</a> fluently withering to nothing on my tongue.
                 <br>
                 <br>
-                Maybe it's not the internet. Maybe it's the words. Or me!
+                <br>
+                <br>
+                Maybe it's not the internet. Maybe it's <a id = "Tumblr" href= "https://www.tumblr.com/alannabean">the words</a>. Or me!
             </div>
 
             <div class = "border">
-                * ~ * ~ * ~ * ~ * F E B R U A R Y * ~ * ~ * ~ * ~ *
+                * ~ * ~ * MARCH * ~ * ~ *
             </div>  
 
         </body>
