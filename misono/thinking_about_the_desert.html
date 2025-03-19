@@ -874,7 +874,7 @@ body {
     color:#8740b3;
 	text-shadow: #ffffff 4px 0 10px;
     font-family: 'Pixelify Sans';
-    width: 50vw;
+	width: 75vw;
     bottom: -30vh;
     text-align: center;
     margin: auto;
@@ -883,7 +883,7 @@ body {
 }
 
 #date {
-	font-size: 5vh;
+	font-size: 4vh;
 	color:#8740b3;
 	text-shadow: #ffffff 4px 0 10px;
     font-family: 'Pixelify Sans';
@@ -896,7 +896,7 @@ body {
 }
 </style>
 
-<!-- SCRIPTS -->
+<!-- BITSY SCRIPTS -->
 <script>
 function startExportedGame() {
 	var gameCanvas = document.getElementById("game");
@@ -907,7 +907,7 @@ function startExportedGame() {
 }
 </script>
 
-<!-- system -->
+<!-- bitsy system -->
 <script>
 function InputSystem() {
 	var self = this;
@@ -2212,7 +2212,7 @@ var mainProcess = addProcess();
 var bitsy = mainProcess.system;
 </script>
 
-<!-- engine -->
+<!-- bitsy engine -->
 <script>
 /* BITSY VERSION */
 // is this the right place for this to live?
@@ -13278,12 +13278,9 @@ exports.hackOptions = hackOptions;
 <!-- GAME CANVAS -->
 <canvas id='game'></canvas>
 <div id='return'>
-		use the arrow keys or touchscreen to navigate.
+		use arrow keys or touchscreen to navigate.
 		<br>
-		<br>
-		when you're ready to leave,
-		<br>
-		hit the back button on your browser.
+		when you're ready to leave, close the browser tab.
 	</div>
 
 	<div id= 'date'>

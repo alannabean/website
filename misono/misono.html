@@ -68,35 +68,107 @@ width: 30vw;
 max-width: 30vh;
 }
 
-#chair:hover{
-	transform: rotate(295deg);
-}
+	#chair:hover{
+		transform: rotate(295deg);
+	}
 
 #notes{
 position: relative;
-top: 40vh;
+top: 30vh;
 right: -20vw;
 width: 30vw;
 max-width: 30vh;
+cursor: crosshair;
 
 }
 
+#bitsyCat{
+	position: relative;
+	bottom: -55vh;
+	right: -25vw;
+	width: 15vw;
+	max-width: 15vh;
+	opacity: .3;
+	transition: opacity 1s;
+}
+
+#bitsyCat:hover{
+	opacity: .5;
+}
+
+#forever{
+	position: relative;
+	top: -18vh;
+	left: 8vw;
+	width: 60vw;
+	max-width:60vh;
+	opacity: .1;
+	font-size:4vw;
+	color: #444cf7;
+	transition: opacity 2s;
+}
+
+	#forever:hover{
+		opacity: 1;
+	}
+
+#credits{
+	position: relative;
+	bottom: -40vh;
+	right: -70vw;
+	width: 50vw;
+	max-width: 50vh;
+	opacity: .4;
+	font-size: 2vw;
+	color:darkgoldenrod;
+	text-decoration: none;
+
+}
+
+	#credits:link{
+		color: darkgoldenrod;
+		text-decoration: none;
+	}
+	#credits:hover{
+		opacity: 1;
+		text-decoration: italic;
+
+	}
+	#credits:visited{
+		color:rgb(131, 102, 7);
+		text-decoration: none;
+	}
+/* why is above not working correctly? */
+
 </style>
     
-
 <body>
 
+
 	<script> function playAudio(url){
-		new Audio(url).play();
+		const song = new Audio(url).play();
+		song.loop = true;
+
+		//not getting loop above either - something to do w DOM element?//
 	}
 	</script>
 
-    <a href="day_and_night.html"><img alt = "A pixelated moon." id = "moon" src = './moon.png'></a>
+    <a href="day_and_night.html" target = _blank><img alt = "A pixelated moon." id = "moon" src = './moon.png'></a>
 
-    <a href="thinking_about_the_desert.html"><img alt = "A pixelated cactus." id = "cactus" src = './desertPlant.png'></a>
+    <a href="thinking_about_the_desert.html" target = _blank><img alt = "A pixelated cactus." id = "cactus" src = './desertPlant.png'></a>
     
-    <a href="hometown_mall.html"><img alt = "A pixelated chair." id = "chair" src = './chair.png'></a>
-	
-	<img alt = "Pixelated music notes." id = "notes" src = "musicNotes.gif" onclick = "playAudio('./RetroLoop.mp3')"></body>
+    <a href="hometown_mall.html" target = _blank><img alt = "A pixelated chair." id = "chair" src = './chair.png'></a>
+
+	<a href="https://www.bitsy.org" target = _blank><img alt = "A little pixelated cat...or is it a dog?" id = "bitsyCat" src = './bitsy.png'></a>
+
+	<img alt = "Pixelated music notes." id = "notes" src = "musicNotes.gif" onclick = "playAudio('./SoftPianoLoop.mp3')"></body>
     
+
+	<div id = "forever"> you can't stay here forever. </div>
+
+	<div id = "credits"> 
+		art + code by <a href="https://www.alannaokun.xyz/" target = _blank>alanna okun</a>
+	<br>
+		music by <a href="https://www.matthewokun.com/" target = _blank>matthew okun</a>
+	</div>
     </html>
