@@ -8,8 +8,16 @@
 <title>misono</title>
 
 <style>
+
+@font-face {
+	font-family: "Pixelify Sans";
+	src:
+	  local("Pixelify Sans"), local("Pixelify-Sans"),
+	  url("./PixelifySans-Regular.ttf") format("truetype");
+  }
+
 html {
-	margin:  0;
+	margin: 0;
 	padding: 0;
 
 }
@@ -23,6 +31,7 @@ body {
 	opacity: .8;
 	background-image:  linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #ffffff 1px);
 	background-size: 20px 20px; 
+	font-family: "Pixelify Sans", 'Courier New', Courier, monospace;
     
 
 }
@@ -35,12 +44,20 @@ width: 30vw;
 max-width: 30vh;
 }
 
+#moon:hover{
+transform: rotate(165deg);
+}
+
 #cactus{
 position: relative;
 top: 60vh;
 right: -30vw;
 width: 30vw;
 max-width: 30vh;
+}
+
+#cactus:hover{
+	transform:rotate(215deg);
 }
 
 #chair{
@@ -50,16 +67,36 @@ right: -10vw;
 width: 30vw;
 max-width: 30vh;
 }
+
+#chair:hover{
+	transform: rotate(295deg);
+}
+
+#notes{
+position: relative;
+top: 40vh;
+right: -20vw;
+width: 30vw;
+max-width: 30vh;
+
+}
+
 </style>
     
 
 <body>
-    <a href="day_and_night.html"><img alt = "A pixelated moon." id = "moon" src = "moon.png"></a>
 
-    <a href="thinking_about_the_desert.html"><img alt = "A pixelated cactus." id = "cactus" src = "desertPlant.png"></a>
+	<script> function playAudio(url){
+		new Audio(url).play();
+	}
+	</script>
+
+    <a href="day_and_night.html"><img alt = "A pixelated moon." id = "moon" src = './moon.png'></a>
+
+    <a href="thinking_about_the_desert.html"><img alt = "A pixelated cactus." id = "cactus" src = './desertPlant.png'></a>
     
-    <a href="hometown_mall.html"><img alt = "A pixelated chair." id = "chair" src = "chair.png"></a>
-</body>
-    
+    <a href="hometown_mall.html"><img alt = "A pixelated chair." id = "chair" src = './chair.png'></a>
+	
+	<img alt = "Pixelated music notes." id = "notes" src = "musicNotes.gif" onclick = "playAudio('./RetroLoop.mp3')"></body>
     
     </html>
