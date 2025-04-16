@@ -32,7 +32,7 @@ function generate() {
   
     let grammar =       tracery.createGrammar(grammarSource);
     grammar.addModifiers(tracery.baseEngModifiers);
-    let output = grammar.flatten("#origin#");
+    let output = grammar.flatten("<br><br><br><br><br>#origin#");
     createP(output);
   
 }
