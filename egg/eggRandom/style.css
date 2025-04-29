@@ -1,0 +1,21 @@
+html, body {
+  margin: 100;
+  padding: 100;
+  font-family: "Courier";
+
+}
+
+p {
+  margin: 100px auto;
+  margin-top: 35vh;
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 18px;
+  opacity: 1;
+  transition: opacity 3s;
+}
+p:hover {
+  opacity : 0;
+  transition: opacity 3s;
+}
+

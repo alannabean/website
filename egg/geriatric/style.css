@@ -1,0 +1,42 @@
+html, body {
+  
+  padding: 0;
+  
+  font-size: 2.5em;
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 10vh;
+  font-family: "Bodoni";
+  font-style: italic;
+  text-shadow: 4px 4px 10px pink;
+  
+
+  
+}
+
+html {
+	opacity: .8;
+	background-image:  linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #c5c9f8 1px);
+	background-size: 20px 20px; 
+}
+
+p:hover{
+  text-shadow: 4px 4px 10px rgb(195, 195, 58);
+}
+
+#genButton:hover{
+  background-color:rgb(222, 206, 237);
+}
+
+#genButton:active{
+  background-color:rgb(203, 164, 239);
+}
+
+
+
+
+
+
+
+
