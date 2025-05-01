@@ -1,0 +1,30 @@
+html, body {
+  margin: 100;
+  padding: 100;
+  font-family: "Courier";
+  
+  
+
+}
+
+body{
+
+background-image:  linear-gradient(#87be74 1px, transparent 1px), linear-gradient(to right, #87be74 1px, #f2fdef 1px);
+background-size: 20px 20px; 
+}
+
+
+p {
+  margin: 100px auto;
+  margin-top: 35vh;
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 20px;
+  opacity: 1;
+  transition: opacity 3s;
+}
+p:hover {
+  opacity : 0;
+  transition: opacity 3s;
+}
+

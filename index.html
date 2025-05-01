@@ -1,301 +1,127 @@
 <!doctype html>
     <html>
         <head>
-         <title>alanna's notebook</title>
-         <link rel="shortcut icon" href="favicon.png">
+         <title>egg</title>
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
-         
-         
-            <style>
 
-            @media (max-width: 600px) {
-                body {
-                background-color: red;
+
+
+
+
+
+         <style>
+                body{
+                    background-image:  linear-gradient(#be2672 1px, transparent 1px), linear-gradient(to right, #be2672 1px, #f3e6e6 1px);
+	                background-size: 20px 20px; 
                 }
-            }
-            @font-face {
-                font-family: "Pixelify Sans";
-                src: local("Pixelify Sans"), local("Pixelify-Sans"),
-                url("PixelifySans-Regular.ttf");
-                        }
-                        
-                #pattern {
-                    position: fixed;
-                    color: rgb(0, 0, 0); 
-                    background-color: #ebede9;
-                    text-shadow: 1px 3px 1px rgb(154, 141, 141);
-                    border: 2px solid black;
-                    width: 22vw;
-                    left: 14vw;
-                    top: 40vh;
-                    font-size: 4vw;
-                    font-family:'Pixelify Sans';
+                #title{
+                    margin-top: 35vh;
                     text-align: center;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 3.2em;
+                    font-style: bold;
+                    text-shadow: rgb(175, 108, 108) 5px 10px;
                 }
 
-                #elegy {
-                    position: absolute;
-                    color: rgb(0, 0, 0); 
-                    width: 34vw;
-                    right: 10vw;
-                    top: 35vh;
-                    font-size: 2vw;
-                    font-family:'Pixelify Sans';
-                    text-align: left;
-                    z-index: 20;
-                }
-                #wood{
-                    position: fixed;
-                    transform: rotate(90deg);
-                    top: 0vh;
-                    left: 0vw;
-                    width: 200vw;
-                    z-index: -10;
-                    
+                #title:hover{
+
+                    font-size: 3.4em;
                 }
 
-                #paper{
-                    position: absolute;
-                    top: 20vh;
-                    right: 10vw;
-                    width: 40vw;
-                    z-index: 10;
+                #intro{
+                    margin-top: 45vh;
+                    margin-right: 10vw;
+                    text-align: right;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 1.2em;
+                    opacity: 1;
+                    transition: opacity 3s;
                     
                 }
 
-                #notebook{
-                    position: fixed;
-                    width: 30vw;
-                    height: 80vh;
-                    top: 10vh;
-                    left: 10vw;
-                    border: 2px solid black;
-                    
+                #intro:hover{
+                    opacity: 0;
+                    transition: opacity 3s;
                 }
 
-                #pixelMe{ 
-                    position: fixed;
-                    transform: rotate(45deg);
-                    width: 8vw;
-                    top: 70vh;
-                    left: 30vw;
-                    border: 1px solid black;
-                    cursor: help;
-                    
+                #essayBar{
+                    text-align: center;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 2em;
+                    margin-top: -40vh;
+                    text-shadow: 1px 1px 2px rgb(175, 108, 108);
+                 
                 }
 
-                #tues{
-                    position: fixed;
-                    transform: rotate(335deg);
-                    width: 8vw;
-                    top: 26vh;
-                    left: 14vw;
-                    z-index: 5;
-                    
+
+                #geriatric{
+                    margin-left: 10vw;
+                    margin-top: 35vh;
+                    font-family: 'Courier New', Courier, monospace;
+                    opacity: .05;
+                    font-style: bold;
+
                 }
 
-                #sadFace{
-                    position: fixed;
-                    transform: rotate(20deg);
-                    width: 6vw;
-                    top: 20vh;
-                    left: 28vw;
-                    z-index: 5;
-                    cursor: crosshair;
-                    
-                }
-                #sadFace:hover{
-                    position: fixed;
-                    transform: rotate(200deg);
-                    width: 6vw;
-                    top: 20vh;
-                    left: 28vw;
-                    z-index: 5;
-                    cursor: crosshair;
-                    
+                #geriatric:hover{
+                   
+                    opacity: .1;
+
                 }
 
-                #happyFace{
-                    position: fixed;
-                    transform: rotate(345deg);
-                    width: 10vw;
-                    top: 64vh;
-                    left: 16vw;
-                    z-index: 5;
-                    cursor: crosshair;
-                    
-                }
-                #happyFace:hover{
-                    position: fixed;
-                    transform: rotate(165deg);
-                    width: 10vw;
-                    top: 64vh;
-                    left: 16vw;
-                    z-index: 5;
-                    cursor: crosshair;
-                    
+                #freeze{
+                    margin-left: 70vw;
+                    margin-top: -80vh;
+                    font-family: 'Courier New', Courier, monospace;
+                    opacity: .05;
+
                 }
 
-                #couldHaveBeen{
-                    position: absolute;
-                    width: 42vw;
-                    height: 40vh;
-                    top: 140vh;
-                    right: 9vw;
-                    z-index: 10;
-                    overflow: no;
-                    border: 1px solid black;
-                    
+                #freeze:hover{
+                   
+                    opacity: .1;
+
                 }
 
-                #grid{
-                    position: absolute;
-                    width: 42vw;
-                    height: 26vh;
-                    top: 154vh;
-                    right: 9vw;
-                    z-index: 10;
-                    border: 1px solid black;
-                    
+                *:link{
+                    text-decoration: none;
+                    color: #7b0c43;
                 }
 
-                #egg{ 
-                    
-                    position: fixed;
-                    width: 4vw;
-                    top: 20vh;
-                    left: 20vw;
+                *:visited{
+                    text-decoration: none;
+                    color: #7b0c43;
+
+                }
+
              
 
 
+        </style>
 
-                }
-                .shadow{
-                    text-shadow: 1px 3px 1px rgb(154, 141, 141);
-                }
-                .border {
-                    position: absolute;
-                    height: 8vh;
-                    width: 42vw;
-                    top: 140vh;
-                    right: 9vw;
-                    background-color: #7883fa;
-                    z-index: 10; 
-                    border: 1px solid black;
-                    font-family: 'Pixelify Sans';
-                    font-size: 3vw;
-                    text-align: center;
-                    }
-               
 
-                    #BF:link{
-                        color: green;
-                        text-decoration: none;
 
-                    }
-                    #BF:visited{
-                        color: blue;
-                        text-decoration: none;
-
-                    }
-                    #BF:hover{
-                        color: red;
-                        text-decoration: none;
-                        font-style: italic;
-
-                    }
-
-                    #BF:active{
-                        color: black;
-                        text-decoration: none;
-
-                    }
-
-                    #LJ:link{
-                        color: green;
-                        text-decoration: none;
-
-                    }
-                    #LJ:visited{
-                        color: blue;
-                        text-decoration: none;
-
-                    }
-                    #LJ:hover{
-                        color: red;
-                        text-decoration: none;
-                        font-style: italic;
-
-                    }
-
-                    #LJ:active{
-                        color: black;
-                        text-decoration: none;
-
-                    }
-
-                    #Tumblr:link{
-                        color: green;
-                        text-decoration: none;
-
-                    }
-                    #Tumblr:visited{
-                        color: blue;
-                        text-decoration: none;
-
-                    }
-                    #Tumblr:hover{
-                        color: red;
-                        text-decoration: none;
-                        font-style: italic;
-
-                    }
-
-                    #Tumblr:active{
-                        color: black;
-                        text-decoration: none;
-
-                    }
-              
-            </style>
         </head>
         <body>
-          
-            
-            <img alt = "A composition notebook with a constantly changing pattern." id = "notebook" src = "notebook.gif">
-            <img alt = "Pixelated notebook paper, drawn by hand." id = "paper" src = "notebookPaper.png">
-            <a href="misono/misono.html"><img alt = "An image of me so pixelated you probably can't tell what it's supposed to be." id = "pixelMe" src = "pixelMe.png"></a>
-            <a href="secrets.html"><img alt = "An adorable and imperious looking small fluffy cat." id = "tues" src = "tues.png"></a>
-            <img alt = "A wooden backdrop, like a school desk." id = "wood" src = "wood1.jpg">
-            <!-- above image via opengameart.org CC0 // the rest by me-->
-            <a href="couldHaveBeen/couldHaveBeen.html"><img alt = "pixelated face representing sadness" id ="sadFace" src = "sadFace.png"></a>
-            <img alt = "A pixelated face representing joy" id = "happyFace" src = "happyFace.png">
-            <a href = "egg/index.html"><img alt "an egg" id = "egg" src = "egg.png"></a>
-
-
-
-            <div id = "pattern">
-                Alanna's Notebook
+             <div id = "title">
+                every way i've tried to tell this story
             </div>
 
-            <div id = "elegy">
-                <br>
-                The internet feels like a city where I <a id = "BF" href="https://www.buzzfeed.com/alannaokun">used to live</a>.
-                <br>
-                <br>
-                It doesn't anymore, although I spend more time there —— here —— than ever.
-                <br>
-                <br>
-                Now it’s as a ticketed visitor, furtive and overwhelmed, the language I <a id = "LJ" href="https://alannabean.livejournal.com/">used to speak</a> fluently withering to nothing on my tongue.
-                <br>
-                <br>
-                <br>
-                <br>
-                Maybe it's not the internet. Maybe it's <a id = "Tumblr" href= "https://www.tumblr.com/alannabean">the words</a>. Or me!
+            <div id = "intro">
+                alanna okun, 2025
             </div>
 
-        
+            <div id = "essayBar">
+              * <a href = "eggRandom/index.html">random</a> * <a href ="egg.html">branching</a> * <a href = "https://docs.google.com/document/d/1HTsNBhqeJBhBztUJwjePECoMLhNAIAcMZ0ZnQ1S_3GE/edit?usp=sharing">straight</a> *
+            </div>
 
+            <div id = "geriatric">
+                <a href = "geriatric/index.html">geriatric</a>
+            </div>
+
+            <div id = "freeze">
+                <a href = "freeze.html">freeze</a>
+            </div>
         </body>
-    </html>
+    </html>     
